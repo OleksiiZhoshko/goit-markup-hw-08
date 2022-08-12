@@ -1,0 +1,33 @@
+// utils styles
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/button";
+
+// base styles
+@import "./base/base";
+@import "./base/reset";
+
+// components styles
+@import "./components/container";
+@import "./components/section-title";
+@import "./components/current";
+@import "./components/foter-form";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/checkbox";
+@import "./components/checkbox";
+
+
+// layout styles
+@import "./layout/header";
+@import "./layout/logo";
+@import "./layout/nav";
+@import "./layout/header-contacts";
+@import "./layout/section-hero";
+@import "./layout/secton-scils";
+@import "./layout/section-duit";
+@import "./layout/section-teem";
+@import "./layout/section-clients";
+@import "./layout/footer";
+@import "./layout/portfolio-buttons";
+@import "./layout/projects";

@@ -1,0 +1,26 @@
+:root {
+    /* color */
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --accent-color: #2196F3;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --icons-color: #AFB1B8;
+    --foter-color: rgba(255, 255, 255, 0.6);
+    --hover-color: #188CE8;
+
+    /* background color */
+
+    --accent-bg-cl: #2F303A;
+    --teem-bg-cl: #F5F4FA;
+
+    /* others */
+
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+ // font-family
+
+ $font-familyRob: 'Roboto', sans-serif;
+ $font-familyRal: 'Raleway', sans-serif;
+

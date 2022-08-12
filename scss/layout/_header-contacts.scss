@@ -1,0 +1,22 @@
+.contacts {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.contacts__icons {
+    margin-right: 10px;
+    fill: currentColor;
+}

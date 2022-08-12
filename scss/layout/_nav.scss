@@ -1,0 +1,32 @@
+.nav {
+    margin-right: auto;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    margin-left: 93px;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__link {
+    transition: color var(--animation);
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}

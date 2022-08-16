@@ -1,9 +1,20 @@
-.form-box {
-    margin-left: 93px;
-}
+.form-box {    
+    display: block;
+    text-align: center; 
+       
+    
+    @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+            text-align: left;
+        } 
+
 
 .form-box__form {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        text-align: center;
+        justify-content: center;        
+}
 }
 
 .form-box__input {
@@ -11,12 +22,24 @@
     padding-left: 16px;
     background-color: transparent;
     box-sizing: border-box;
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (max-width: 1199px) {
+            max-width: 450px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+    }
+
+    
 }
+    
 
 .form-box__button {
     font-weight: 700;
@@ -34,8 +57,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    margin-left: 12px;
-    margin-right: 0;
+    margin: 20px auto 0;
+
+    @media screen and (min-width: 1200px) {
+            margin-top: 0px;
+            margin-left: 12px;
+        }
 
 }
 

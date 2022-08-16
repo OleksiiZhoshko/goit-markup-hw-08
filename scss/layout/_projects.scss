@@ -6,12 +6,23 @@
 
 .projects__link {
     transition: box-shadow var(--animation);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+}
+
+.project__item:nth-child(-n+2) {
+    
+    @media screen and (min-width:768px) and (min-width:1199px) {
+        height: 440px;
+    }
+    
 }
 
 .projects__box {
@@ -46,12 +57,17 @@
 }
 
 .wrapper {
+    flex-grow: 1;
     padding-bottom: 20px;
     padding-top: 20px;
     border: 1px solid #EEEEEE;
     border-top: none;
     padding-left: 24px;
     padding-right: 24px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+    max-width: 354px;
+    }
 }
 
 .wrapper__title {

@@ -1,11 +1,137 @@
-.header {
+.header { 
+     
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
+
+    
 }
 
 .header .container {
     display: flex;
     align-items: center;
 }
+
+.header__box--mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+       
+    @media screen and (max-width:767px) {
+        width: 100%;
+        height: 60px;
+    }
+    
+}
+
+
+
+// .header {  
+//     position: relative;
+//     border-bottom: 1px solid #ECECEC;
+// }
+
+// .header .container {
+//     height: 60px;
+//     display: flex;
+//     align-items: center;
+
+//     @media screen and (min-width:768px) {
+//         height: 80px;
+//     }
+      
+// }
+
+// .header__button {
+//     display: inline-flex;
+//     margin-left: auto;
+//     border: none;
+//     background-color: transparent;
+//     z-index: 10;
+
+//     &:active {
+//         fill: var(--accent-color);
+//     }
+
+//     @media screen and (min-width:768px) {
+//         display: none;
+//     }
+
+//     & .header__icon--menu {
+//         display: none;
+//     }
+    
+//     &.is-open .header__icon--menu {
+//         display: block;
+//     }
+
+//     &.is-open .header__icon--close {
+//         display: none;
+//     }
+// }
+
+// .menu-container{
+//     flex-direction: column;
+//     justify-content: space-between;
+//     background-color: var(--white-color);
+    
+
+//     @media screen and (max-width:767px) {
+//         display: none;
+//         position: fixed;
+//         top: 0%;
+//         left: 0;
+//         width: 100%; 
+//         height: 100%;
+//         overflow-y: scroll;
+//         &.is-open {
+//             display: flex;
+//         }
+//     }
+
+//     @media screen and (min-width:768px) {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//     }    
+   
+// }
+
+//  .mob {
+
+//     @media screen and (max-width:767px){
+//             font-weight: 500;
+//             font-size: 34px;
+//             line-height: calc(40 / 34);
+//             letter-spacing: 0.02em;
+//             color: var(--accent-color);
+//         }
+
+//     @media screen and (min-width:768) {
+        
+//     }    
+//  } 
+ 
+
+//  .mob-networks {
+//     @media screen and (min-width:768px) {
+//             display: none;
+//         }
+
+//      display: flex;
+//      flex-wrap: wrap;     
+//      margin-left: 40px;
+//      margin-bottom: 48px;
+//      gap: 10px;
+//      font-weight: 500;
+//      font-size: 18px;
+//      line-height: calc(22 / 18);
+//      letter-spacing: 0.02em;
+//      color: var(--accent-color);
+//  }
+
+//  .mob-networks__item:not(:last-child) .mob-netwofrks__link {
+//     padding-right: 10px;    
+//     border-right: 1px solid rgba(33, 33, 33, 0.2);
+//  }

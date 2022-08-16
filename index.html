@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo site hw7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Demo site hw8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
@@ -19,9 +19,20 @@
 <body>
 
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="./index.html" class="logo link">Wep<span class="logo__header">Studio</span></a>
+        <div class="container"> 
+            
+            <div class="header__box--mob">
+            <a href="./index.html" class="logo link">Wep<span class="logo__header">Studio</span></a>
+            
+            <button type="button" class="header__button" aria-controls="menu-conteiner" data-menu-open>
+                <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
+                    <use class="header__icon--menu" href="./img/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            </div>
+
+            <nav class="nav">  
+            
                 <ul class="nav__list list">
                     <li class="nav__item">
                         <a href="./index.html" class="nav__link link current">Студія</a>
@@ -33,9 +44,11 @@
                         <a href="#" class="nav__link link">Контакти</a>
                     </li>
                 </ul>
-            </nav>
+            </nav>           
+            
+            <div>
             <ul class="contacts list">
-                <li>
+                <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link link">
                         <svg class="contacts__icons" width="16px" height="12px">
                             <use href="./img/icons.svg#icon-envelope"></use>
@@ -43,7 +56,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                <li>
+                <li class="contacts__item">
                     <a href="tel:+380961111111" class="contacts__link link">
                         <svg class="contacts__icons" width="10px" height="16px">
                             <use href="./img/icons.svg#icon-smartphone"></use>
@@ -53,6 +66,26 @@
                 </li>
             </ul>
 
+            <!-- <ul class="mob-networks list">
+                <li class="mob-networks__item">
+                    <a class="mob-netwofrks__link link" href="#">Instagram</a>
+                    
+                </li>
+                <li class="mob-networks__item">
+                    <a class="mob-netwofrks__link link" href="#">Twitter</a>
+                    
+                </li>
+                <li class="mob-networks__item">
+                    <a class="mob-netwofrks__link link" href="#">Facebook</a>
+                    
+                </li>
+                <li class="mob-networks__item">
+                    <a class="mob-netwofrks__link link" href="#">LinkedIn</a>
+                    
+                </li>
+            </ul> -->
+            </div>
+            </div>
         </div>
     </header>
 
@@ -123,24 +156,35 @@
                 <h2 class="section-title">Чим ми займаємось</h2>
                 <ul class="duit__list list">
                     <li>
-                        <div class="duit__cards">
-                            <img src="./img/p1.jpg" alt="кодим" width="370" height="294" class="duit-img">
+                        <div class="duit__cards">                                                       
+                            <img
+                                srcset="./img/img_du_1-1x_result.jpg 1x, ./img/img_du_1-2x_result.jpg 2x,"
+                                src="./img/p1.jpg"
+                                alt="кодим"
+                                class="duit-img">
                             <div class="duit__box">
                                 <h3>ДЕСКТОПНІ ДОДАТКИ</h3>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="duit__cards">
-                            <img src="./img/p2.jpg" alt="розробляєм" width="370" height="294" class="duit-img">
+                        <div class="duit__cards">                            
+                            <img 
+                                srcset="./img/img_du_2-1x_result.png 1x, ./img/img_du_2-2x_result.png 2x,"
+                                src="./img/p2.jpg"
+                                alt="розробляєм" 
+                                class="duit-img">
                             <div class="duit__box">
                                 <h3>МОБІЛЬНІ ДОДАТКИ</h3>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="duit__cards">
-                            <img src="./img/p3.jpg" alt="тестуєм" width="370" height="294" class="duit-img">
+                        <div class="duit__cards">                            
+                            <img 
+                            srcset="./img/img_du_3-1x_result.png 1x, ./img/img_du_3-2x_result.png 2x,"
+                            src="./img/p3.jpg" 
+                            alt="тестуєм" class="duit-img">
                             <div class="duit__box">
                                 <h3>ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
                             </div>
@@ -157,9 +201,17 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="teem__list list">
                     <li class="teem__item">
-                        <img src="./img/Teem1.jpg" alt="Игорь" width="270" height="260">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="./img/img_dt_t-1_1x_result.jpg 1x, ./img/img_dt_t-1_2x_result.jpg 2x" />
+                    
+                        <source media="(min-width: 768px)" srcset="./img/img_tb_t-1_1x_result.jpg 1x, ./img/img_tb_t-1_2x_result.jpg 2x" />
+                    
+                        <source media="(max-width: 767px)" srcset="./img/img_mb_t-1_1x_result.jpg 1x, ./img/img_mb_t-1_2x_result.jpg 2x" />
+                    
+                        <img src="./img/Teem1.jpg" alt="Ігор Демяненко" />
+                    </picture>
                         <div class="teem__box">
-                            <h3 class="teem__title">Игорь Демьяненко</h3>
+                            <h3 class="teem__title">Ігор Демяненко</h3>
                             <p class="teem__text">Product Designer</p>
                             <ul class="list networks">
                                 <li>
@@ -199,7 +251,15 @@
                         </div>
                     </li>
                     <li class="teem__item">
-                        <img src="./img/olga.jpg" alt="Ольга" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/img_dt_t-2_1x_result.jpg 1x, ./img/img_dt_t-2_2x_result.jpg 2x" />
+                        
+                            <source media="(min-width: 768px)" srcset="./img/img_tb_t-2_1x_result.jpg 1x, ./img/img_tb_t-2_2x_result.jpg 2x" />
+                        
+                            <source media="(max-width: 767px)" srcset="./img/img_mb_t-2_1x_result.jpg 1x, ./img/img_mb_t-2_2x_result.jpg 2x" />
+                        
+                            <img src="./img/olga.jpg" alt="Ольга Репина" />
+                        </picture>
                         <div class="teem__box">
                             <h3 class="teem__title">Ольга Репина</h3>
                             <p class="teem__text">Frontend Developer</p>
@@ -240,9 +300,17 @@
                         </div>
                     </li>
                     <li class="teem__item">
-                        <img src="./img/Teem3.jpg" alt="Николай" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/img_dt_t-3_1x_result.jpg 1x, ./img/img_dt_t-3_2x_result.jpg 2x" />
+                        
+                            <source media="(min-width: 768px)" srcset="./img/img_tb_t-3_1x_result.jpg 1x, ./img/img_tb_t-3_2x_result.jpg 2x" />
+                        
+                            <source media="(max-width: 767px)" srcset="./img/img_mb_t-3_1x_result.jpg 1x, ./img/img_mb_t-3_2x_result.jpg 2x" />
+                        
+                            <img src="./img/Teem3.jpg" alt="Миколай Тарасов" />
+                        </picture>
                         <div class="teem__box">
-                            <h3 class="teem__title">Николай Тарасов</h3>
+                            <h3 class="teem__title">Миколай Тарасов</h3>
                             <p class="teem__text">Marketing</p>
                             <ul class="list networks">
                                 <li>
@@ -281,9 +349,17 @@
                         </div>
                     </li>
                     <li class="teem__item">
-                        <img src="./img/Teem4.jpg" alt="Михаил" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./img/img_dt_t-4_1x_result.jpg 1x, ./img/img_dt_t-4_2x_result.jpg 2x" />
+                        
+                            <source media="(min-width: 768px)" srcset="./img/img_tb_t-4_1x_result.jpg 1x, ./img/img_tb_t-4_2x_result.jpg 2x" />
+                        
+                            <source media="(max-width: 767px)" srcset="./img/img_mb_t-4_1x_result.jpg 1x, ./img/img_mb_t-4_2x_result.jpg 2x" />
+                        
+                            <img src="./img/Teem4.jpg" alt="Михайло Єрмаков" />
+                        </picture>                        
                         <div class="teem__box">
-                            <h3 class="teem__title">Михаил Ермаков</h3>
+                            <h3 class="teem__title">Михайло Єрмаков</h3>
                             <p class="teem__text">UI Designer</p>
                             <ul class="list networks">
                                 <li>
@@ -380,7 +456,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
     </main>
 
@@ -388,7 +464,8 @@
 
     <footer class="footer">
         <div class="container footer__conteiner">
-            <div>
+            <div class="footer__tablet">
+            <div class="footer__box">
                 <a href="./index.html" class="logo link">Wep<span class="logo__footer">Studio</span></a>
                 <address class="address">
                     <ul class="list address__list">
@@ -437,6 +514,7 @@
                     </li>
                 </ul>
             </div>
+            </div>
             <div class="form-box">
                 <h2 class="social__title">Підпишіться на розсилку</h2>
                 <form class="form-box__form">
@@ -462,7 +540,7 @@
             </button>
 
             <form class="form">
-                <strong class="form__title">Залиште свої данні, ми Вам перетелефонуємо</strong>
+                <strong class="form__title">Залиште свої данні, ми Вам зателефонуємо</strong>
                 <div class="form__group" role="group">
                     <label class="form__label">
                         <span class="form__text">Ім'я</span>
@@ -504,7 +582,58 @@
         </div>
     </div>
 
+    <!-- Mobil menu -->
+
+<div class="mobile-menu" data-menu>
+    <button type="button" class="mobile-menu__buton" data-menu-close>
+        <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
+            <use class="mobile-menu__icon" href="./img/icons.svg#icon-close-mb"></use>
+        </svg>
+    </button>
+<div class="mobile-menu__conteiner">
+   <ul class="mobil-menu__list list">
+        <li><a class="mobil-menu__link mobil-menu__link--active link" href="./index.html">Студія</a></li>
+        <li><a class="mobil-menu__link link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="mobil-menu__link link" href="#">Контакти</a></li>
+   </ul>
+
+    <ul class="mobil-menu__list list">
+        <li class="mobile-menu__item--tel">
+            <a href="tel:+380961111111" class="mobile-menu__link--contact link">
+                +38 096 111 11 11
+            </a>
+        </li>
+        <li class="mobile-menu__item--mail">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__link--contact link">                
+                info@devstudio.com
+            </a>
+        </li>
+          
+    </ul>
+
+    <ul class="mob-networks mobil-menu__list list">
+        <li class="mob-networks__item">
+            <a class="mob-netwofrks__link link" href="#">Instagram</a>
+    
+        </li>
+        <li class="mob-networks__item">
+            <a class="mob-netwofrks__link link" href="#">Twitter</a>
+    
+        </li>
+        <li class="mob-networks__item">
+            <a class="mob-netwofrks__link link" href="#">Facebook</a>
+    
+        </li>
+        <li class="mob-networks__item">
+            <a class="mob-netwofrks__link link" href="#">LinkedIn</a>
+    
+        </li>
+    </ul>   
+</div>
+</div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

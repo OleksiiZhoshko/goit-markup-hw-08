@@ -1,0 +1,31 @@
+.header__button {
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+    
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+    &:active {
+        fill: var(--accent-color);
+    }
+}
+
+.mobile-menu__buton {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 15px;
+
+    border: none;
+    background-color: transparent;
+
+    &:active {
+        fill: var(--accent-color);
+    }
+}

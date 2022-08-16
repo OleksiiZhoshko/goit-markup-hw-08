@@ -1,16 +1,35 @@
 .footer {
-    background-color: var(--accent-bg-cl);
+    background-color: var(--accent-bg-cl);    
 }
 
-.footer__conteiner {
+.footer__conteiner {    
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    display: block;
+    text-align: center;  
     align-items: baseline;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        text-align: left;
+    }
 }
 
-.address {
-    width: 231px;
+.footer__tablet {
+@media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+}
+
+.footer__box {    
+    margin-bottom: 60px;  
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+        }
+    }
+
+.address {      
     margin-top: 20px;
     font-style: inherit;
     color: var(--foter-color)
@@ -21,7 +40,11 @@
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .address__link {
@@ -29,7 +52,15 @@
 }
 
 .social {
-    margin-left: 70px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+            margin-left: 165px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+        margin-left: 70px;
+    }
 }
 
 .social__title {

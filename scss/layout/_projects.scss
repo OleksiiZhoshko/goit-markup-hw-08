@@ -19,7 +19,7 @@
 
 .project__item:nth-child(-n+2) {
     
-    @media screen and (min-width:768px) and (min-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
         height: 440px;
     }
     

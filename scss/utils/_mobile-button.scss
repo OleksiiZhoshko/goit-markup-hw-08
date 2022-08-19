@@ -25,7 +25,9 @@
     border: none;
     background-color: transparent;
 
-    &:active {
+    &:active,
+    &:hover,
+    &:focus {
         fill: var(--accent-color);
     }
 }

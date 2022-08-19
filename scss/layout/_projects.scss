@@ -54,6 +54,11 @@
     line-height: calc(28 / 18);
     color: var(--white-color);
     text-align: left;
+
+    @media screen and (max-width:380px) {
+        padding: 20px;
+        font-size: 14px;
+    }
 }
 
 .wrapper {

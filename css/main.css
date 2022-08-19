@@ -817,7 +817,7 @@ section {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/img/hero/img_hs_mb_2x_result.jpg);
+    background-image: url(../img/hero/img_hs_mb_2x_result.jpg);
   }
 }
 @media (min-width: 480px) {

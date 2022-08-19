@@ -15,7 +15,11 @@
     margin: 0 auto;
 }
 
-
+@media (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../img/hero/img_hs_mb_2x_result.jpg);
+    }
+}
 
 @media (min-width: 480px) {
     .hero {

@@ -14,7 +14,7 @@
     padding-bottom: 200px;
     margin: 0 auto;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1199px) {
         padding-top: 118px;
         padding-bottom: 118px;
     }
@@ -22,30 +22,45 @@
 
 @media (min-resolution: 2dppx) {
     .hero {
-        background-image: url(../img/hero/img_hs_mb_2x_result.jpg);
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                     url(../img/hero/img_hs_mb_2x_result.jpg);
     }
 }
 
 @media (min-width: 480px) {
     .hero {
-        background-image: url(../img/hero/img_hs_tb_1x_result.jpg);
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                     url(../img/hero/img_hs_tb_1x_result.jpg);
     }
 
     @media (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero/img_hs_tb_2x_result.jpg);
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                         url(../img/hero/img_hs_tb_2x_result.jpg);
         }
     }
 }
 
 @media (min-width: 768px) {
     .hero {
-        background-image: url(../img/hero/Img_hs_dt_1x_result.jpg);
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                     url(../img/hero/Img_hs_dt_1x_result.jpg);
     }
 
     @media (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero/Img_hs_dt_2x_result.jpg);
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                         url(../img/hero/Img_hs_dt_2x_result.jpg);
         }
     }
 }

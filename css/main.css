@@ -646,6 +646,11 @@ section {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (max-width: 440px) {
+  .mob-networks {
+    font-size: 10px;
+  }
+}
 
 .mob-networks__item:not(:last-child) .mob-netwofrks__link {
   padding-right: 10px;
@@ -825,7 +830,7 @@ section {
   padding-bottom: 200px;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -834,27 +839,32 @@ section {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/img_hs_mb_2x_result.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/img_hs_mb_2x_result.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/img_hs_mb_2x_result.jpg);
   }
 }
 @media (min-width: 480px) {
   .hero {
-    background-image: url(../img/hero/img_hs_tb_1x_result.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/img_hs_tb_1x_result.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/img_hs_tb_1x_result.jpg);
   }
 }
 @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/img_hs_tb_2x_result.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/img_hs_tb_2x_result.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/img_hs_tb_2x_result.jpg);
   }
 }
 @media (min-width: 768px) {
   .hero {
-    background-image: url(../img/hero/Img_hs_dt_1x_result.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/Img_hs_dt_1x_result.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/Img_hs_dt_1x_result.jpg);
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/Img_hs_dt_2x_result.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/Img_hs_dt_2x_result.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/Img_hs_dt_2x_result.jpg);
   }
 }
 .hero__container {
